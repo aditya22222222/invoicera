@@ -1,90 +1,154 @@
+/*------------------------------------------ Normal CSS----------------------- */
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+
 body {
-  font-family: "Inter";
-  background: #ffffff;
+  font-family: 'Inter';
+  background: #FFFFFF
 }
+
+.bg-sec {
+  background: #FFF8F1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-primary {
+  border: none;
+  color: #FFFFFF;
+  background: #EC6B16;
+  border-radius: 8px;
+  position: relative;
+  top: 47px;
+  margin-top: 30px;
+  font-weight: 400;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 140%;
+
+}
+
+.btn-primary:hover {
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  background-color: #000000;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #ec6b16;
+  position: relative;
+  top: 47px;
+  border-radius: 8px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+
+}
+
+.m-b-140 {
+  margin-bottom: 140px;
+}
+
+.p-b-140 {
+  padding-bottom: 140px;
+}
+
+.bg-t {
+  background: #FEF9F1;
+}
+
+.d-flex {
+  display: flex;
+}
+
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 .container {
   width: 1320px;
   margin: 0 auto;
 }
 
-.bg-sec {
-  background: #fff8f1;
-}
-.text-center {
-  text-align: center;
-}
-.btn-primary {
-  border: none;
-  background: #ec6b16;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  color: #ffffff;
-}
-.btn-secondary {
-  background: transparent;
-  color: #ec6b16;
-  border: 1px solid #ec6b16;
-  border-radius: 8px;
-  cursor: pointer;
-}
-h1 h2 h3 h4 h5 h6 {
-  color: #243141;
-}
-.p-b-140 {
-  padding-bottom: 140px;
-}
-.bg-t {
-  background: #fef9f1;
-}
-.d-flex {
-  display: flex;
+
+
+/* ---------------------------Header -----------------------------*/
+
+
+
+
+
+header {
+  background: #FEF9F1;
+
 }
 
 header .logo {
   margin-top: 32px;
 }
+
 header .container {
+  display: flex;
   justify-content: space-between;
 }
+
 header .navigation ul {
+  display: flex;
   column-gap: 40px;
 }
+
 header .navigation ul li a {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  color: #2b2f3e;
+  color: #2B2F3E;
   top: 40px;
   position: relative;
 }
-header .navigation ul li a:hover {
+
+header .navigation button {
+  border: none;
+  background: #EC6B16;
+  border-radius: 8px;
+  padding: 0 10px;
+  height: 42px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 140%;
+  color: #FFFFFF;
+  font-family: 'Inter';
+}
+
+header .navigation button:hover {
   font-weight: 600;
   transition: 0.3s ease-in-out;
+  background-color: #000000;
 }
-header .btn {
-  margin-top: 30px;
-  padding: 15px 31px;
-  margin-top: 30px;
-  color: #ffffff;
-}
-header .btn:hover {
-  background-color: #243141;
-}
+
+
+/* -----------------PopUp---------------------- */
+
+
 #popup {
+
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
@@ -96,8 +160,9 @@ header .btn:hover {
 
   z-index: 20;
 
-  transition: all ease-in 0.4s;
+  transition: all ease-in .4s;
 }
+
 .popup1 {
   width: 100%;
   height: 100%;
@@ -107,6 +172,7 @@ header .btn:hover {
   align-items: center;
   justify-content: center;
 }
+
 .popupbox {
   width: 700px;
   background: #ffffff;
@@ -114,38 +180,29 @@ header .btn:hover {
   padding: 40px;
   border-radius: 20px;
 }
-/* #popup:before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: #FFF;
-  z-index: -1;
-  border-radius: 20px
-} */
+
 
 .popup h2 {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
-  line-height: 40px;
-  /* identical to box height, or 125% */
+  line-height: 125%;
+
 
   text-align: center;
   letter-spacing: 0.1px;
 
   color: #243141;
   margin-bottom: 50px;
+
 }
 
 .popup input {
   width: 305px;
-  border: 1px solid #fed7bd;
+  border: 1px solid #FED7BD;
   border-radius: 10px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -159,16 +216,10 @@ header .btn:hover {
 .popup .btn {
   position: relative;
   left: 32%;
+  top: 32%;
   padding: 15px 31px;
 }
-.popup .btn:hover {
-  background-color: #000000;
-}
-/* .custom-animation {
-  
-  transform: rotate3d(1, .5, .5, 180deg) scale(0.1);
-  transition: all ease-in .4s;
-} */
+
 .popup .cross {
   background: none;
   border: none;
@@ -180,23 +231,37 @@ header .btn:hover {
   right: -13px;
   font-size: 16px;
 }
-.section {
+
+
+
+
+/* ------------------------------Banner Section ----------------------------- */
+
+
+
+
+.banner {
+  background: #FEF9F1;
   padding-top: 61px;
-  padding-bottom: 80px;
 }
-.section .container {
+
+.banner .container {
+  display: flex;
   justify-content: space-between;
 }
-.section .container h6 {
+
+.banner .container h6 {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: rgba(236, 107, 22, 0.76);
   padding: 10px;
+  background: #FFE9CF;
   border-radius: 3px;
   width: 192px;
 }
-.section .container h1 {
+
+.banner .container h1 {
   font-weight: 600;
   font-size: 42px;
   line-height: 51px;
@@ -204,77 +269,113 @@ header .btn:hover {
   margin: 10px 0px;
   width: 543px;
 }
-.section .container p {
+
+.banner .container p {
   font-weight: 500;
   font-size: 20px;
   line-height: 140%;
-  color: #ec6b16;
+  color: #EC6B16;
   margin-bottom: 30px;
 }
-.section .container ul li {
+
+.banner .container ul li {
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  color: #0e0b3d;
+  color: #0E0B3D;
   position: relative;
   padding-left: 15px;
   left: 15px;
   padding-bottom: 10px;
 }
-.section .container ul li::marker {
+
+.banner .container ul li::marker {
   position: absolute;
-  content: "✓";
-  color: #ec6b16;
+  content: '✓';
+  color: #EC6B16;
 }
-.section .frame {
-  right: 74px;
-  position: relative;
-}
-.section .btn {
-  padding: 15px 31px;
-  bottom: -30px;
-  position: relative;
-  margin-right: 10px;
-}
-.section .btn:hover {
-  background-color: #000000;
-  transition: 0.3 ease-in-out;
-  color: #ffffff;
+
+.banner .container button {
   border: none;
+  background: #EC6B16;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  padding: 15px 31px;
+  border-radius: 8px;
+  cursor: pointer;
 }
+
+.banner .container img {
+  padding-bottom: 50px;
+}
+
+
+
+
+
+/* ------------------Section 1-------------------------- */
+
+
+
+
+
+
 .section1 .container {
   align-items: center;
-
+  display: flex;
   justify-content: space-between;
 }
+
 .section1 {
-  padding-top: 40px;
-  padding-bottom: 68px;
+
+  padding: 40px;
 }
+
 .section1 .container p {
   font-weight: 500;
   font-size: 14.7636px;
   line-height: 150%;
   color: #515151;
 }
+
+
+
+
+
+
+/* ------------------------------------------------------------Section-2------------------------------------------------------ */
+
+
+
+
+
+
+/* .section2 {
+  background: #F5F5F5;
+} */
+
 .section2 .container .card {
-  padding-bottom: 60px;
+  width: 1320px;
   border-radius: 10px;
-  margin-bottom: 60px;
-  background: #fff8f1;
+  background: #FFF8F1;
   border: 1px solid #FFEEE2;
-border-radius: 10px;
 }
+
 .section2 .container h4 {
   font-weight: 500;
   font-size: 24px;
   line-height: 130%;
-  color: #0e0b3d;
+  color: #0E0B3D;
   padding: 50px 0px;
 }
+
 .section2 .container .card .row {
+  display: flex;
   column-gap: 48px;
 }
+
 .section2 .container h3 {
   font-weight: 600;
   font-size: 40px;
@@ -282,15 +383,18 @@ border-radius: 10px;
   align-items: center;
   color: #000000;
 }
+
 .section2 .container p {
   font-weight: 400;
+  padding-bottom: 80px;
   font-size: 16px;
   line-height: 140%;
-  color: #0e0b3d;
+  color: #0E0B3D;
   position: relative;
 }
+
 .section2 .col {
-  width: 291px;
+  width: 285px;
 }
 
 .section2 .container .col p::after {
@@ -300,20 +404,45 @@ border-radius: 10px;
   width: 101px;
   transform: rotate(90deg);
 }
+
+
+
+
+
+
+
+
+
+
+
 /* -----------------------SLIDER--------------------- */
 
+
+
+
+
+
+
+
+
+
+/* .section3 {
+  background: #F5F5F5
+} */
+
 .section3 {
+
   text-align: center;
-  padding-bottom: 120px;
+  display: block;
 }
 
 .section3 .container h3 {
+  font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.1px;
   color: #000000;
-  text-align: center;
   padding-bottom: 10px;
 }
 
@@ -321,14 +450,23 @@ border-radius: 10px;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #0e0b3d;
-  margin-bottom: 47px;
+  color: #0E0B3D;
+  margin-bottom: 100px;
+}
+
+.section3 .container .star {
+  display: flex;
+  justify-content: center;
 }
 
 .section3 .profile {
   display: flex;
   text-align: left;
+  position: relative;
+  top: -77px;
+
 }
+
 
 .section3 .name {
   padding-left: 10px;
@@ -345,38 +483,74 @@ border-radius: 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
-  color: #737b7d;
+  color: #737B7D;
 }
+
+
+
+
 
 .section3 .container {
+  max-width: 1300px;
+  width: 100%;
   overflow: hidden;
-  padding: 80px 0;
+
 }
+
 
 .section3 .container .glide .card {
-  margin-top: 20px;
-  text-align: left;
-  width: 427px;
-
-  border: 1px solid #fbcdae;
-  border-radius: 10px;
-  padding: 48px 41px 31px 36px;
+  margin: 50px;
+  height: 307px;
   position: relative;
-  margin-bottom: 53px;
   cursor: pointer;
+  text-align: left;
+  width: 375px;
+  border: 1px solid #FBCDAE;
+  border-radius: 10px;
+  padding: 49px 36px 0px 52px;
 }
-.section3 .container .glide .card:hover{
-  border: 1px solid #FF9D3C;
-}
-.section3 .container .glide .card::before {
+
+
+.section3 .container .card:before {
   content: url(../images/quote.png);
   position: relative;
-  height: 33px;
-  width: 33px;
+  margin: 0 auto;
   top: -70px;
-  box-sizing: border-box;
   left: -17px;
+
 }
+
+.section3 .container .star img {
+  padding-left: 5px;
+}
+
+.section3 .container .glide .card .profile .pic img {
+  width: 41px;
+}
+
+
+
+
+
+
+
+/* 
+ul .glide__slides li .glide__slide .card:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: url(/Invoicera/assets/images/quote.png) no-repeat;
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  background-position: -36px ;
+} */
+
+
+.section3 .container .card:hover {
+  border: 1px solid #FF9D3C;
+}
+
 
 .section3 .container .glide .card p {
   text-align: left;
@@ -384,146 +558,389 @@ border-radius: 10px;
   font-size: 12px;
   line-height: 160%;
   color: #333030;
-  margin-bottom: 81px;
-}
-.section3 .container .glide .card .profile p {
-  margin-bottom: 0;
 }
 
 .section3 .container .glide .card img {
   padding-bottom: 6px;
-  position: relative;
-  left: -47px;
 }
-.section3 .container .glide .card .profile img {
-  left: 0;
+
+.glide__bullet {
+  background-color: #FFE6CD;
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  margin-right: 12px;
+  margin-bottom: 60px;
+}
+
+.glide__bullet--active {
+  background-color: #F88601;
+}
+
+
+.section3 .container .OR {
+
+  position: relative;
+  top: -4px;
+  left: 13px;
+
 }
 
 .section3 .btn {
-  padding: 15px 31px;
-  position: relative;
-  color: #ffffff;
-  text-decoration: none;
-  top: 60px;
-  margin-right: 18px;
+  margin: 60px;
+  width: 156px;
+  height: 52px;
+  background: #EC6B16;
+  border-radius: 8px;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
 }
-.section3 .btn:hover {
-  background-color: #000000;
-}
-.section3 a:hover {
-  font-weight: 600;
-  transition: 0.3s ease-in-out;
-}
+
 .section3 a {
+  top: -23px;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   text-decoration-line: underline;
-  color: #ec6b16;
-  margin-left: 46px;
-  top: 60px;
-  position: relative;
+  color: #EC6B16;
+  margin-left: 10px;
 }
 
-.benefits {
-  padding: 140px 0px 172px;
-  background-color: #fff8f1;
-  text-align: center;
-}
-.benefits h2 {
+
+
+
+
+
+
+
+/* --------------------Selection Page------------------------------------ */
+
+
+
+
+
+/* .selection {
+  background: #F5F5F5;
+} */
+
+.selection h2 {
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.1px;
   color: #243141;
-  text-align: center;
+  margin-top: 106px;
 }
-.benefits p {
+
+.selection p {
+  font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  text-align: center;
-  color: #0e0b3d;
+  color: #0E0B3D;
+  margin-bottom: 60px;
+}
+
+.selection #card {
+
+  background: #FFF8F1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 64px;
+  padding-right: 86px;
+}
+
+.selection #card1 {
+  height: 533px;
+  background: #fff8f1;
+  border-radius: 10px;
+  display: none;
+  justify-content: space-between;
+  padding-left: 110px;
+  padding-right: 70px;
+}
+
+.selection .tab img {
+  width: 747px;
+  position: relative;
+  right: 144px;
+  padding: 51px;
+
+}
+
+.selection #card .text {
+  position: relative;
+  left: 47px;
+}
+
+.selection #card2 {
+  height: 533px;
+  background: #fff8f1;
+  border-radius: 10px;
+  display: none;
+  justify-content: space-between;
+  padding-left: 110px;
+  padding-right: 70px;
+}
+
+.selection #card3 {
+  height: 533px;
+  background: #fff8f1;
+  border-radius: 10px;
+  display: none;
+  justify-content: space-between;
+  padding-left: 110px;
+  padding-right: 70px;
+}
+
+
+.selection .text {
+  width: 502px;
+  padding-top: 127px;
+}
+
+.selection .text h5 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #243141;
+  margin-bottom: 5px;
+}
+
+.selection .text p {
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4E5062;
+}
+
+.selection .text ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #4E5062;
+  position: relative;
+  padding-left: 15px;
+  padding-bottom: 13px;
+  left: 15px;
+}
+
+.selection .text ul li::marker {
+  position: absolute;
+  content: '✓';
+  color: #EC6B16;
+}
+
+.selection .img {
+  width: 552px;
+  border-radius: 19px;
+  margin-top: 60px;
+  height: 424px;
+}
+
+
+.selection .navigation ul {
+  display: flex;
+  padding: 0px 120px;
+  justify-content: space-between;
+}
+
+.selection .navigation ul li {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 0px 20px;
+}
+
+.selection .navigation #img {
+  position: relative;
+  top: 23px;
+  right: 75px;
+}
+
+.selection .navigation #imgs {
+  position: relative;
+  top: 23px;
+  right: 126px;
+}
+
+.selection .navigation ul li:hover {
+  background-color: #FFF8F1;
+  border-radius: 17px 17px 0px 0px;
+  cursor: pointer;
+}
+
+/* .selection .navigation ul li::selection {
+  background-color: #FFF8F1;
+} */
+
+.selection .navigation ul li button {
+  color: #282A30;
+  border: none;
+  background: transparent;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 11px 5px;
+  right: -17px;
+  cursor: pointer;
+  top: -14px;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------Billing benefits Page----------------------- */
+
+
+
+.billing {
+  padding: 140px 0px 112px;
+  background-color: #FFF8F1;
+  margin: 120px 0;
+
+}
+
+.billing h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+  color: #243141;
+
+}
+
+.billing p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0E0B3D;
   margin-bottom: 100px;
 }
-.benefits .row {
+
+.billing .row {
   display: flex;
   column-gap: 20px;
   margin-bottom: 20px;
 }
-.benefits .col {
+
+.billing .col {
   width: 429px;
   height: 374px;
-  border: 1px solid #fcdbbb;
+  border: 1px solid #FCDBBB;
   align-items: center;
-  text-align: center;
-  padding-top: 50px;
+  padding: 50px 33px;
   filter: drop-shadow(0px 4px 10px rgba(245, 245, 245, 0.57));
   border-radius: 10px;
   cursor: pointer;
-  padding: 50px 33px;
 }
-.benefits .col h3 {
+
+.billing .col h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 150%;
-  align-items: center;
   color: #243141;
   margin-bottom: 5px;
 }
-.benefits .col p {
+
+.billing .col p {
   font-weight: 400;
   font-size: 16px;
   line-height: 180%;
-  text-align: center;
-  color: #6c6f93;
+  color: #6C6F93;
 }
 
-.benefits a {
+.billing button {
+  width: 156px;
+  height: 52px;
+  background: #EC6B16;
+  border-radius: 8px;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.billing a {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   text-decoration-line: underline;
-  color: #ec6b16;
-  margin-left: 46px;
+  color: #EC6B16;
+  margin-left: 3px;
+  top: 15px;
+
 }
-.benefits .col:hover {
-  border: 1px solid #ff9d3c;
+
+.billing .col:hover {
+  border: 1px solid #FF9D3C;
 }
-.benefits .btn {
-  padding: 15px 31px;
+
+.billing .OR {
   position: relative;
-  color: #ffffff;
-  text-decoration: none;
-  top: 60px;
-  margin-right: 18px;
+  top: 33px;
+  left: 9px;
 }
-.benefits .btn:hover {
-  background-color: #000000;
-}
-.benefits a:hover {
-  font-weight: 600;
-  transition: 0.3s ease-in-out;
-}
+
+
+
+
+
+
+
+/*-------------------------------------------------- INVOICE------------------------------------ */
+
+
+/*----------------------------------- Main Div Invoice-------------------------------- */
+
+
 .invoice {
-  padding-top: 140px;
-  padding-bottom: 112px;
+  height: 1131px;
 }
+
 .invoice h2 {
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   letter-spacing: 0.1px;
   color: #243141;
   padding-bottom: 10px;
 }
+
 .invoice p {
   font-size: 18px;
   line-height: 150%;
   align-items: center;
-  text-align: center;
-  color: #0e0b3d;
+  color: #0E0B3D;
 }
+
 .invoice .image {
   height: 699px;
   background-position: center;
@@ -531,323 +948,968 @@ border-radius: 10px;
   position: relative;
   top: -117px;
 }
+
 .invoice .image img {
   margin-top: 78px;
 }
+
+
+
+
+
+/* -----------------Invoicing Part Div--------------------- */
+
+
+
+
 .invoicing {
-  background: #fff8f1;
+  height: 809px;
+  background: #FFF8F1;
   padding: 140px 0px;
-  text-align: center;
+  display: block;
 }
+
 .invoicing h2 {
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   letter-spacing: 0.1px;
   color: #243141;
   padding-bottom: 10px;
 }
+
 .invoicing p {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #0e0b3d;
+  color: #0E0B3D;
   margin-bottom: 100px;
 }
+
 .invoicing .card {
+  height: 172px;
+  width: 1320px;
   filter: drop-shadow(0px 4px 10px rgba(245, 245, 245, 0.57));
 }
+
 .invoicing .row {
   display: flex;
-  /* border: 0.25px solid #ec6b16; */
 }
+
 .invoicing .square {
   height: 175px;
   width: 220px;
   align-items: center;
-  border: 0.5px solid #ec6b16;
-  /* border-bottom-width : thin; */
+  border: 1px solid #EC6B16;
   padding-top: 48px;
+
 }
+
 .invoicing .squares {
   height: 175px;
   width: 220px;
   align-items: center;
-  border: 1px solid #ec6b16;
+  border: 1px solid #EC6B16;
   padding-top: 48px;
   border-top: none;
-}
-.invoicing .square p {
-  margin-top: 16px;
-}
-.invoicing .squares p {
-  margin-top: 16px;
+
 }
 
 .invoicing .square:not(:first-child) {
   margin-left: -1px;
+
+
 }
 
 .invoicing .squares:not(:first-child) {
   margin-left: -1px;
+
+
 }
 
-.formSection h2 {
+
+
+
+
+/* -------------------------------FormSection--------------------------- */
+
+
+
+
+
+
+/* .form {
+  background-color: #F5F5F5;
+  ;
+} */
+
+.form h2 {
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   letter-spacing: 0.1px;
   color: #243141;
 }
+
 .myform {
   min-width: 1076px;
   padding: 55px 60px;
   min-height: 553px;
-  border: 1px solid #fff8f1;
-  background: #fff8f1;
+  border: 1px solid #FFF8F1;
+  background: #FFF8F1;
   border-radius: 32px;
   margin: 92px 182px 178px 182px;
-  text-align: center;
+
 }
-.formSection .container .myform p {
+
+.form .container .myform p {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  text-align: center;
-  color: #0e0b3d;
+  color: #0E0B3D;
   margin-bottom: 40px;
 }
-.formSection .container .myform input {
+
+.form .container .myform input {
   width: 301px;
   height: 55px;
-  border: 1px solid #fed7bd;
+  border: 1px solid #FED7BD;
   border-radius: 10px;
   padding: 18px 20px;
   margin-bottom: 20px;
 }
-.formSection .container .myform textarea {
+
+.form .container .myform textarea {
   width: 955px;
   height: 159px;
   padding: 18px 20px;
-  border: 1px solid #fed7bd;
+  border: 1px solid #FED7BD;
   border-radius: 10px;
   resize: none;
-  font-family: "Inter";
-  font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-/* identical to box height, or 130% */
-
-
-color: rgba(0, 0, 0, 0.6);
-
+  font-family: 'Inter';
 }
-.formSection button {
+
+.form a {
   border: none;
-  background: #ec6b16;
+  background: #EC6B16;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 15px 31px;
   border-radius: 8px;
   cursor: pointer;
-  margin: 40px 0px 0;
+  margin: 40px 0px;
 }
+
+.formerror {
+  font-size: 12px !important;
+  color: red !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------Footer-------------------------- */
+
+
+
+
+
+
+
+
 footer {
   height: 38px;
-  background-color: #ec6b16;
+  background-color: #EC6B16;
   align-items: center;
 }
+
 footer p {
+  position: relative;
+  left: 62px;
   font-weight: 400;
   padding: 10px 0px 11px;
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
-  color: #ffffff;
-}
-.formerror {
-  font-size: 12px !important;
-
-  color: red !important;
-}
-.formSection button:hover {
-  background-color: #000000;
-}
-
-.software {
-  padding-bottom: 120px;
-}
-.software h2 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 0.1px;
-  color: #243141;
-}
-.software p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  text-align: center;
-  color: #0e0b3d;
-  margin-bottom: 82px;
-}
-.software #card {
-  height: 533px;
-  background: #fff8f1;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 110px;
-  padding-right: 70px;
-}
-.software button {
-  border: none;
-  background: transparent;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 26px 32px 19px;
-  cursor: pointer;
-  color: #282a30;
-}
-.software .active {
-  background-color: #fff8f1;
-  border-radius: 17px 17px 0px 0px;
-}
-
-.software #card1 {
-  height: 533px;
-  background: #fff8f1;
-  border-radius: 10px;
-  display: none;
-  justify-content: space-between;
-  padding-left: 110px;
-  padding-right: 70px;
-}
-.software .tab img{
-  width: 740px;
-    right: 117px;
-    top: -62px;
-    position: relative;
-    padding: 51px
-}
-.software #card2 {
-  height: 533px;
-  background: #fff8f1;
-  border-radius: 10px;
-  display: none;
-  justify-content: space-between;
-  padding-left: 110px;
-  padding-right: 70px;
-}
-.software #card3 {
-  height: 533px;
-  background: #fff8f1;
-  border-radius: 10px;
-  display: none;
-  justify-content: space-between;
-  padding-left: 110px;
-  padding-right: 70px;
-}
-.software .text {
-  width: 502px;
-  padding-top: 127px;
-}
-.software .text h5 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 150%;
-  color: #243141;
-  margin-bottom: 5px;
-}
-.software .text p {
-  font-weight: 400;
-  text-align: left;
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 150%;
-  color: #4e5062;
-}
-.software .text ul li {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  color: #4e5062;
-  position: relative;
-  padding-left: 15px;
-  left: 15px;
-}
-.software .text ul li::marker {
-  position: absolute;
-  content: "✓";
-  color: #ec6b16;
-}
-.software .img {
-  width: 552px;
-  border-radius: 19px;
-  margin-top: 60px;
-  height: 424px;
-}
-.software .navigation {
-  text-align: center;
-}
-.software .navigation ul {
-  display: flex;
-  padding: 0px 100px;
-  justify-content: center;
-}
-.software .navigation ul li {
-  font-weight: 500;
-  text-decoration: none;
-  list-style: none;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 10px 20px;
-}
-.software .navigation ul li:hover {
-  background-color: #fff8f1;
-  border-radius: 17px 17px 0px 0px;
-}
-.software .navigation ul li a {
-  color: #282a30;
-}
-.benefits .OR {
-  position: relative;
-  top: 80px;
-  left: 9px;
-}
-.section3 .container .OR {
-  position: relative;
-  top: 81px;
-  left: 13px;
-}
-.glide__bullet{
-  background-color:#FFE6CD;
-    width: 7px;
-    height: 7px;
-    padding: 0;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-    
-    
-    
-  margin-right: 12px;
-}
-.glide__bullet--active{
-  
-  background-color: #F88601;
+  color: #FFFFFF;
 }
 
 
 
+/* -----------------For Screen Size 1280px(Nest Hub Max)- 1030px(Nest Hub)--------------------------- */
+
+
+
+
+
+
+
+@media screen and (max-width:1280px) and (min-width:1030px) {
+  .container {
+      width: 960px;
+      margin: 0 60px;
+  }
+
+  .header {
+      width: 980px;
+  }
+
+  .banner .container h1 {
+      font-size: 25px;
+  }
+
+  .banner .container .text {
+      width: 410px;
+      position: relative;
+  }
+
+  .banner .container .frame {
+      width: 573px;
+      padding-top: 130px;
+  }
+
+
+
+
+  .section1 .container p {
+      font-size: 10px;
+  }
+
+  .section1 .container img {
+      width: 783px;
+  }
+
+
+
+  .section2 .container .card {
+      width: 960px;
+      height: 256px;
+  }
+
+  .section2 .container h3 {
+      font-size: 30px;
+  }
+
+  .section2 .container p {
+      font-size: 12x;
+  }
+
+  .section2 .container .col p::after {
+      width: 109px;
+  }
+
+  .section3 .container h3 {
+      font-size: 32px;
+  }
+
+
+
+  .selection h2 {
+      font-size: 32px;
+  }
+
+  .selection p {
+      font-size: 16px;
+      margin-bottom: 70px;
+  }
+
+  .selection .navigation ul li {
+      font-size: 12px;
+  }
+
+  .selection .navigation ul {
+      padding: 0px;
+  }
+
+  .selection .navigation ul {
+      padding-left: 32px;
+      padding-right: 20px;
+  }
+
+  .selection .card {
+      padding-left: 35px;
+      padding-right: 16px;
+  }
+
+
+  .billing h2 {
+      font-size: 32px;
+  }
+
+  .billing p {
+      font-size: 16px;
+  }
+
+  .billing .col h3 {
+      font-size: 16px;
+  }
+
+  .billing .col p {
+      font-size: 12px;
+  }
+
+  .billing .col {
+      height: 300px;
+  }
+
+
+  .invoice h2 {
+      font-size: 30px;
+  }
+
+  .invoice p {
+      font-size: 14px;
+  }
+
+  .invoice .container .image img {
+      width: 936px;
+  }
+
+  .invoice .container .image {
+      height: 644px;
+  }
+
+  .invoice {
+      height: 940px;
+  }
+
+
+  .invoicing h2 {
+      font-size: 32px;
+  }
+
+  .invoicing p {
+      font-size: 14px;
+  }
+
+  .invoicing .square {
+      height: 148px;
+      width: 161px;
+  }
+
+  .invoicing {
+      height: 746px;
+  }
+
+  .myform {
+      min-width: 946px;
+      right: 163px;
+      position: relative;
+  }
+
+  .form .container .myform input {
+      width: 256px;
+  }
+
+  .form .container .myform textarea {
+      width: 822px;
+  }
+
+  .form button {
+      padding: 12px 30px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------ For Screen size max =768px(i-Pad mini)-------------------------------- */
+
+
+@media only screen and (max-width: 768px) {
+
+
+  .banner .container h1 {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 38px;
+      color: #000000;
+      margin: 10px 0px;
+
+  }
+
+  .banner .container p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+  }
+
+  .logo img {
+      width: 175px;
+      top: 41px;
+      padding-left: 60px;
+      position: absolute;
+  }
+
+  .container .text {
+      margin-left: 60px;
+  }
+
+  .banner .container ul li {
+      font-size: 10px;
+  }
+
+  header .navigation ul li a {
+      font-size: 11px;
+      position: relative;
+      left: 30px;
+
+  }
+
+  header .navigation button {
+
+      width: 88px;
+      height: 38px;
+      font-size: 12px;
+      position: relative;
+      right: -25px;
+  }
+
+  .btn-primary {
+      padding: 15px;
+      font-size: 12px;
+  }
+
+  .btn-secondary {
+      font-size: 10px;
+  }
+
+  .frame {
+      width: 320px;
+      right: 265px;
+      top: 73px;
+      position: relative;
+  }
+
+  .banner .container {
+      height: 475px;
+      display: flex;
+      justify-content: space-between;
+
+  }
+
+  .banner .container h6 {
+      width: 155px;
+      font-size: 12px;
+  }
+
+  .container {
+      width: 648px;
+      margin: 0 60px;
+  }
+
+  header {
+      width: 768px;
+  }
+
+
+
+
+
+  .section1 .container p {
+      font-size: 10px;
+  }
+
+  .section1 .container img {
+      width: 510px;
+  }
+
+
+
+
+
+
+
+
+
+
+  .section2 {
+      margin-top: 50px;
+  }
+
+
+  .section2 .container .card {
+      width: 670px;
+      height: 190px;
+  }
+
+  .section2 .container h4 {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 100%;
+  }
+
+  .section2 .container .card .row {
+      display: flex;
+      column-gap: 20px;
+  }
+
+  .section2 .container h3 {
+      font-size: 15px;
+  }
+
+  .section2 .container .col p {
+      font-size: 10px;
+  }
+
+  .section2 .container .col1 p {
+      left: -26px;
+      font-size: 10px;
+  }
+
+  .section2 .container .col1 h3 {
+      left: -20px;
+      position: relative;
+  }
+
+  .section2 .container .col p::after {
+      width: 58px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .section3 {
+      height: 555px;
+  }
+
+  .section3 .profile {
+      top: -18px;
+  }
+
+  .section3 .container {
+      padding-bottom: 80px;
+      margin-top: -70px;
+      max-width: 768px;
+  }
+
+  .section3 .container h3 {
+      font-size: 22px;
+  }
+
+  .section3 .container p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+      margin-bottom: 30px;
+  }
+
+
+  .section3 .container .glide .card p {
+      font-size: 8px;
+  }
+
+  .section3 .container .glide .card .profile .pic img {
+      width: 28px;
+  }
+
+  .section3 h6 {
+      font-size: 10px;
+  }
+
+  .section3 .container .glide .card {
+      margin: 21px;
+      width: 235px;
+      height: 236px;
+      padding: 47px 27px 0px;
+  }
+
+
+  .section3 .container .card:before {
+      left: 10px;
+  }
+
+
+  .section3 a {
+      font-size: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .selection {
+      height: 681px;
+  }
+
+
+  .selection h2 {
+      font-size: 21px;
+  }
+
+  .selection .img img {
+      width: 323px;
+  }
+
+
+  .selection .text h5 {
+      font-weight: 600;
+      font-size: 16px;
+  }
+
+  .selection .text p {
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 12px;
+  }
+
+  .selection .text h5 {
+      font-weight: 600;
+      position: relative;
+      font-size: 16px;
+      top: -45px;
+      right: 50px;
+  }
+
+  .selection .text p {
+      position: relative;
+      font-size: 11px;
+      padding-top: 5px;
+      margin-bottom: 25px;
+      right: 50px;
+      top: -45px;
+  }
+
+  .selection .text ul li {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 215%;
+      padding-left: 10px;
+      left: -38px;
+      top: -55px;
+  }
+
+
+  .selection .navigation ul li {
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 9px;
+      line-height: 19px;
+      padding: 16px 17px 5px;
+  }
+
+  .selection .navigation ul {
+      padding: 0px;
+  }
+
+  .selection .navigation ul {
+      padding-left: 32px;
+      padding-right: 20px;
+  }
+
+  .selection .card {
+      padding-left: 35px;
+      padding-right: 16px;
+      height: 386px;
+  }
+
+  .selection .navigation img {
+      width: 15px;
+  }
+
+
+
+
+
+
+
+  .billing h2 {
+      font-size: 20px;
+      position: relative;
+      top: -75px;
+  }
+
+  .billing p {
+      font-size: 14px;
+      position: relative;
+      top: -70px;
+      margin-bottom: 12px;
+
+  }
+
+  .billing .row {
+      column-gap: 10px;
+      margin-bottom: 10px;
+  }
+
+  .billing .col h3 {
+      font-size: 12px;
+
+  }
+
+  .billing .col p {
+      font-size: 10px;
+      position: relative;
+      top: 10px;
+  }
+
+  .billing .col {
+      height: 300px;
+  }
+
+  .billing .col img {
+      width: 25px;
+  }
+
+  .billing a {
+      font-size: 12px;
+      margin-left: 25px;
+  }
+
+
+
+
+
+
+
+  .invoice h2 {
+      font-size: 20px;
+  }
+
+  .invoice p {
+      font-size: 12px;
+  }
+
+  .invoice .image img {
+      height: 465px;
+  }
+
+  .invoice {
+      height: 724px;
+      padding-top: 70px;
+  }
+
+
+
+
+
+
+  .invoicing .card {
+      width: 768px;
+  }
+
+  .invoicing h2 {
+      font-size: 24px;
+  }
+
+  .invoicing p {
+      font-size: 10px;
+  }
+
+  .invoicing .square {
+      height: 136px;
+      width: 108px;
+  }
+
+  .invoicing {
+      height: 577px;
+      padding: 70px 0px;
+  }
+
+  .invoicing .square img {
+      width: 25px;
+  }
+
+
+
+
+
+  .myform {
+      min-width: 625px;
+      right: 168px;
+      position: relative;
+      margin-bottom: 70px;
+  }
+
+
+
+
+
+  .form .container .myform input {
+      width: 151px;
+  }
+
+  .form .container .myform textarea {
+      width: 505px;
+  }
+
+  .form h2 {
+      font-size: 26px;
+      line-height: 30px;
+  }
+
+
+  .form .container .myform p {
+      font-size: 14px;
+      margin-bottom: 0px;
+  }
+}
+
+
+
+
+/*--------------------------- Screen Size: 576px-------------------------- */
+
+
+@media only screen and (max-width: 576px) {
+
+  .btn-primary {
+      padding: 12px;
+      font-size: 10px;
+  }
+
+  .btn-secondary {
+      padding: 12px;
+  }
+
+  header {
+      max-width: 576px;
+  }
+
+  header .navigation ul {
+      display: flex;
+      column-gap: 25px;
+      POSITION: RELATIVE;
+      LEFT: -175px;
+  }
+
+  header .navigation ul li a {
+      font-size: 9px;
+  }
+
+  header .navigation button {
+      width: 70px;
+      font-size: 10px;
+  }
+
+  .logo img {
+      width: 75px;
+      padding: 0;
+  }
+
+  .banner .container h6 {
+      width: 106px;
+      font-size: 8px;
+  }
+
+  .banner .container h1 {
+      font-size: 15px;
+      line-height: 24px;
+  }
+
+  .banner .container p {
+      font-size: 8px;
+  }
+
+  .frame {
+      width: 280px;
+      right: 317px;
+      top: 80px;
+  }
+
+  .banner .container .text {
+      margin-left: 0;
+  }
+
+
+
+
+  .section1 .container img {
+      width: 400px;
+      position: relative;
+      left: -150px;
+  }
+
+  .section1 .container p {
+      font-size: 8px;
+      position: relative;
+      left: -45px;
+  }
+
+
+  .section2 .container .card {
+      width: 480px;
+      height: 190px;
+  }
+
+  .section2 .container h4 {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 100%;
+  }
+
+  .section2 .col {
+      width: 195px;
+  }
+
+  .section2 .container .col p {
+      font-size: 8px;
+  }
+
+  .section2 .container .col p::after {
+      width: 32px;
+  }
+
+  .section2 .container .col1 p {
+      left: -20px;
+      font-size: 8px;
+  }
+
+  .section2 .container h3 {
+      font-size: 11px;
+  }
+
+
+
+  .section3 .container {
+      padding-bottom: 58px;
+      margin-top: -140px;
+      max-width: 576px;
+  }
+
+  .section3 .container h3 {
+      font-size: 16px;
+  }
+
+  .section3 .container p {
+      font-size: 10px;
+  }
+
+  .section3 .container .glide .card {
+      width: 410px;
+      left: 48px;
+  }
+
+  .section3 .container p {
+      font-weight: 400;
+      font-size: 10px;
+  }
+}
