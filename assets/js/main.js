@@ -18,7 +18,7 @@
     var glide = new Glide(".glide", {
         type: "carousel",
         perView: 3,
-        // autoplay: 1000,
+        autoplay: 1000,
         breakpoints: {
           // adjust the number of items shown based on screen size
           768: {
@@ -107,6 +107,19 @@
         document.getElementById(id).style.display = "flex";
         evt.currentTarget.className += " active";
       }
+
+
+//country code script
+var input = document.querySelector("#contact");
+intlTelInput(input, {
+  initialCountry: "auto",
+  geoIpLookup: function (success, failure) {
+    $.get("https://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+      var countryCode = (resp && resp.country) ? resp.country : "us";
+      success(countryCode);
+    });
+  },
+});
 
 
 
