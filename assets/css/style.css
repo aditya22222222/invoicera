@@ -361,6 +361,9 @@ header .btn:hover {
 
   cursor: pointer;
 }
+.section3 .container .glide .card:hover{
+  border: 1px solid #FF9D3C;
+}
 .section3 .container .glide .card::before {
   content: url(../images/quote.png);
   position: relative;
@@ -808,14 +811,21 @@ footer p {
   left: 13px;
 }
 .glide__bullet{
-  /* color: red;
-  font-weight: bold;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em; */
+  background-color:#FFE6CD;
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    
+    
+    
   margin-right: 12px;
 }
 .glide__bullet--active{
-  color: #ec6b16;
-  background-color: #ec6b16;
+  
+  background-color: #F88601;
 }
