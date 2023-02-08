@@ -18,7 +18,7 @@
     var glide = new Glide(".glide", {
         type: "carousel",
         perView: 3,
-        autoplay: 1000,
+        // autoplay: 1000,
         breakpoints: {
           // adjust the number of items shown based on screen size
           768: {
