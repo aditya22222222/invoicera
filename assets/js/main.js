@@ -96,7 +96,7 @@
 
       function openTab(evt, id) {
         var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("card");
+        tabcontent = document.getElementsByClassName("tab");
         for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
         }

@@ -233,6 +233,7 @@ header .btn:hover {
   padding: 15px 31px;
   bottom: -30px;
   position: relative;
+  margin-right: 10px;
 }
 .section .btn:hover {
   background-color: #000000;
@@ -260,6 +261,8 @@ header .btn:hover {
   border-radius: 10px;
   margin-bottom: 60px;
   background: #fff8f1;
+  border: 1px solid #FFEEE2;
+border-radius: 10px;
 }
 .section2 .container h4 {
   font-weight: 500;
@@ -318,7 +321,7 @@ header .btn:hover {
   font-size: 18px;
   line-height: 150%;
   color: #0e0b3d;
-  margin-bottom: 100px;
+  margin-bottom: 47px;
 }
 
 .section3 .profile {
@@ -356,9 +359,9 @@ header .btn:hover {
 
   border: 1px solid #fbcdae;
   border-radius: 10px;
-  padding: 49px 41px 41px 36px;
+  padding: 48px 41px 31px 36px;
   position: relative;
-
+  margin-bottom: 53px;
   cursor: pointer;
 }
 .section3 .container .glide .card:hover{
@@ -631,6 +634,14 @@ header .btn:hover {
   border-radius: 10px;
   resize: none;
   font-family: "Inter";
+  font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 130% */
+
+
+color: rgba(0, 0, 0, 0.6);
+
 }
 .formSection button {
   border: none;
@@ -642,7 +653,7 @@ header .btn:hover {
   padding: 15px 31px;
   border-radius: 8px;
   cursor: pointer;
-  margin: 40px 0px;
+  margin: 40px 0px 0;
 }
 footer {
   height: 38px;
@@ -719,6 +730,13 @@ footer p {
   justify-content: space-between;
   padding-left: 110px;
   padding-right: 70px;
+}
+.software .tab img{
+  width: 740px;
+    right: 117px;
+    top: -62px;
+    position: relative;
+    padding: 51px
 }
 .software #card2 {
   height: 533px;
@@ -829,3 +847,6 @@ footer p {
   
   background-color: #F88601;
 }
+
+
+
