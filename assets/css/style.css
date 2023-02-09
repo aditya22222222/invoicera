@@ -1155,8 +1155,8 @@ footer p {
 }
 @media only screen and (max-width: 880px){
   .software .img{
-    display: block;
-    position: relative;
+    /* display: block;
+    position: relative; */
     
   }
   .software .text h5{
@@ -1190,8 +1190,232 @@ footer p {
   }
   
 }
-@media only screen and (max-width: 730px){
-  
+@media only screen and (max-width: 760px){
+  header .logo {
+    margin-top: 42px;
+    width: 16%;
 }
+header .navigation ul li a{
+  font-size: 12px;
+}
+.benefits .row{
+  margin-bottom: 0;
+}
+.btn-primary{
+  font-size: 10px;
+  padding: 15px 15px;
+}
+.section .btn{
+  font-size: 14px;
+}
+.section .container{
+  display: block;
+}
+.section2 .container h4{
+  font-size: 18px;
+}
+.section2 .col{
+  margin-top: 26px;
+}
+.section2 .container h3{
+  font-size: 26px;
+}
+.section2 .container p{
+  font-size: 12px;
+}
+.section3 .container h3{
+  font-size: 30px;
+}
+.section3 .container .glide .card{
+  margin-bottom: 34px;
+}
+.section3 .container{
+  padding: 60px 0;
+}
+.software h2{
+  font-size: 28px;
+}
+.software p{
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.benefits{
+  padding: 50px 0 100px;
+}
+.benefits p{
+  font-size: 12px;
+}
+.benefits .col{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.benefits .btn{
+  top: 0;
+}
+.benefits a{
+  top: 0 !important;
+}
+.benefits .OR{
+  top: 20px;
+}
+.invoice h2{
+  font-size: 22px;
+}
+.invoice{
+  padding: 80px 0;
+}
+.invoicing h2{
+  font-size: 30px;
+}
+.invoicing{
+  padding: 80px 0;
+}
+.software #card{
+  flex-wrap: wrap;
+}
+.software #card1{
+  flex-wrap: wrap;
+}
+.software #card2{
+  flex-wrap: wrap;
+}
+.software #card3{
+  flex-wrap: wrap;
+}
+.main-tab{
+  display: flex;
+  background-color: #fff8f1;
+}
+.software .text{
+  width: 100%;
+  flex-basis: 100%;
+}
+.software .img{
+  width: 100%;
+  flex-basis: 100%;
+  margin-top: 30px ;
+}
+.software .navigation{
+  padding-top: 50px;
+  width: 25%;
+}
+.software .navigation img{
+  display: none;
+}
+}
+@media only screen and (max-width: 575px){
+  header .navigation ul{
+    column-gap: 15px;
+  }
+  header .navigation ul li a{
+    font-size: 10px;
+    top: 35px;
+  }
+  .btn-primary{
+    padding: 10px 4px;
+  }
+  header .logo{
+    margin-top: 38px;
+  }
+  .section .container{
+    padding-top: 100px;
+  }
+  .section2 .col{
+    flex-basis: 50%;
+  }
+  .section2 .col:nth-child(2){
+    border: none;
+  }
+  .section3 .container h3{
+    font-size: 26px;
+  }
+  .section3 .container p{
+    font-size: 16px;
+  }
+  .section3 .container .OR{
+    display: none;
+  }
+  .section3 a{
+    display: block;
+    margin-top: 30px;
+  }
+  .software h2{
+    font-size: 24px;
+  }
+  .software p{
+    font-size: 12px;
+  }
+  .benefits h2{
+    font-size: 26px;
+  }
+  .benefits p{
+    font-size: 10px;
+  }
+  .benefits .col{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .benefits .OR{
+    display: none;
+  }
+  .benefits a{
+    display: block;
+    margin-top: 30px;
+  }
+  .invoice h2{
+    font-size: 14px;
+  }
+  .invoice p{
+    font-size: 12px;
+  }
+  .invoicing h2{
+    font-size: 26px;
+  }
+  .invoicing p{
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+  .invoicing .square{
+    width: 50%;
+  }
+  .invoicing .squares{
+    width: 50%;
+  }
+  .invoicing .row .square:nth-child(2){
+    border-top-right-radius: 7px !important;
+  }
+  .invoicing .row .square:nth-child(3) {
+    border-top-right-radius: 0px !important;
+    border-bottom: none;
+    border-right: none;
+    border-left: 1px solid #ec6b16;
+}
+.invoicing .row .square:nth-child(4){
+  border-right: 1px solid #ec6b16;
+  border-bottom: none;
+}
+.invoicing .row .square:nth-child(5){
+  border-right: none;
+}
+.invoicing .row .square:nth-child(6){
+  border-left: 1px solid #ec6b16;
+}
+.invoicing .row .squares:nth-child(3){
+  border-left: 1px solid #ec6b16;
+  border-right: none;
+}
+.invoicing .row .squares:nth-child(4){
+  border-right: 1px solid #ec6b16;
+  border-radius:0 !important ;
+}
+.invoicing .row .squares:nth-child(5){
+  border-bottom-left-radius: 7px;
+}
+
+
+
+
+}
+  
 
 

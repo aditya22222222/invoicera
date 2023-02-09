@@ -27,6 +27,9 @@
           768: {
             perView: 2,
           },
+          760:{
+            perView:1,
+          },
           576: {
             perView: 1,
           },
