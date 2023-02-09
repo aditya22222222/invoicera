@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INVOICERA</title>
-    <link
-      rel="preload stylesheet"
-      href="assets/css/style.css"
-      type="text/css"
-      defer
-      as="style"
-    />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/glide.core.min.css">
     <link
       rel="preload stylesheet"
       href="assets/fonts/stylesheet.css"
@@ -20,18 +14,12 @@
       defer
       as="style"
     />
-    <link
-      rel="preload stylesheet"
-      href="assets/css/glide.core.min.css"
-      type="text/css"
-      defer
-      as="style"
-    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+
 </head>
 <body>
     <header class="bg-t">
-        <div class="container d-flex">
+        <div class="container d-flex justify-sb">
           <div class="logo">
             <img loading="lazy" src="assets/images/logo.png" alt="" />
           </div>
@@ -39,23 +27,22 @@
             <ul class="d-flex">
               <li><a href="#">Features</a></li>
               <li><a href="#">Pricing</a></li>
-              <li><a href="#">Book A Demo</a></li>
+              <li><a href="#">Contact Us</a></li>
               <li>
                 <button
                 
               onclick="show('popup')"
                 
                 class="btn-primary btn"
-                style="padding: 15px 31px; color: #ffffff; "
+                
                 >Book A Free Demo</button>
                 
               </li>
             </ul>
           </div>
         </div>
-      </header>
-      
-      <div class="popup custom-animation" id="popup">
+    </header>
+    <div class="popup custom-animation" id="popup">
         <div class="popup1">
             <div class="popupbox">
                 <button class="cross" onclick="hide('popup')">X</button>
@@ -83,8 +70,9 @@
 
         </div>
         
-      </div>
-      <section class="section bg-t">
+    </div>
+      
+    <section class="section bg-t">
         <div class="container d-flex">
           <div class="text">
             <h6>World's Most Powerful</h6>
@@ -122,11 +110,13 @@
             </picture>
           </div>
         </div>
-      </section>
-      <section class="section1">
+    </section>
+    <section class="section1">
         <div class="container d-flex">
           <p>Our Top Global Partners</p>
-          <picture>
+          <picture style="
+          flex-basis: 82%;
+      ">
             <source src="assets/images/brand.webp" type="image/webp" />
             <source src="assets/images/brand.png" type="image/png" />
             <img loading="lazy" src="assets/images/brand.png" alt="" />
@@ -150,7 +140,7 @@
                 <h3>80+</h3>
                 <p>Enterprise Integration</p>
               </div>
-              <div class="col1">
+              <div class="col">
                 <h3>18+</h3>
                 <p>Years of Domain Expertise</p>
               </div>
@@ -410,11 +400,6 @@
             
         </div>
       </section>
-
-
-
-
-
       <section class="benefits">
         <div class="container">
           <h2>Invoicera Benefits for Your Enterprise Billing</h2>
@@ -585,7 +570,6 @@
           </div>
         </div>
       </section>
-
       <section class="formSection">
         <div class="container">
           <div class="myform">
@@ -641,15 +625,29 @@
         <p>© Invoicera.io All rights reserved.</p>
       </footer>
     
+    
 
-       <!-- JS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.min.js"></script>
-
-
-
-      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-      <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

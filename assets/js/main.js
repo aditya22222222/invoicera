@@ -21,6 +21,9 @@
         autoplay: 1000,
         breakpoints: {
           // adjust the number of items shown based on screen size
+          980:{
+            perView:2,
+          },
           768: {
             perView: 2,
           },
