@@ -532,7 +532,7 @@ header .btn {
   margin-bottom: 82px;
 }
 .software #card {
-  height: 533px;
+  padding: 120px 70px;
   background: #fff8f1;
   border-radius: 10px;
   display: flex;
@@ -558,7 +558,7 @@ header .btn {
 }
 
 .software #card1 {
-  height: 533px;
+  padding: 120px 70px;
   background: #fff8f1;
   border-radius: 10px;
   display: none;
@@ -568,7 +568,7 @@ header .btn {
 }
 
 .software #card2 {
-  height: 533px;
+  padding: 120px 70px;
   background: #fff8f1;
   border-radius: 10px;
   display: none;
@@ -577,7 +577,7 @@ header .btn {
   padding-right: 70px;
 }
 .software #card3 {
-  height: 533px;
+  padding: 120px 70px;
   background: #fff8f1;
   border-radius: 10px;
   display: none;
@@ -586,8 +586,8 @@ header .btn {
   padding-right: 70px;
 }
 .software .text {
-  width: 502px;
-  padding-top: 127px;
+  flex-basis: 40%;
+  padding-top: 50px;
 }
 .software .text h5 {
   font-weight: 500;
@@ -620,7 +620,7 @@ header .btn {
 }
 .software .img {
   flex-basis: 60%;
-  padding: 51px;
+  
   align-items: center;
     display: flex;
 }
@@ -842,7 +842,7 @@ header .btn {
   margin-bottom: 40px;
 }
 .formSection .container .myform input {
-  width: 260px;
+  width: 31.33%;
 
   border: 1px solid #fed7bd;
   border-radius: 10px;
@@ -850,7 +850,7 @@ header .btn {
   margin-bottom: 20px;
 }
 .formSection .container .myform textarea {
-  width: 832px;
+  width: 100%;
   height: 159px;
   padding: 18px 20px;
   border: 1px solid #fed7bd;
@@ -938,9 +938,260 @@ footer p {
   .software button{
     font-size: 12px;
   }
+  .software .text{
+    padding: 0;
+    right: 20px;
+    position: relative;
+  }
 }
 @media only screen and (max-width: 1080px)  {
   .software button{
     font-size: 10px;
   }
+  .software #card{
+    padding: 84px 70px;
+  }
+  .software #card1{
+    padding: 84px 70px;
+  }
+  .software #card2{
+    padding: 84px 70px;
+  }
+  .software #card3{
+    padding: 84px 70px;
+  }
 }
+@media only screen and (max-width: 948px){
+  .section .container h1{
+    font-size: 36px;
+  }
+  .section .container p{
+    font-size: 16px;
+  }
+  .section .container ul li{
+    font-size: 15px;
+  }
+  .section .btn{
+    margin-right: 4px;
+    padding: 12px 8px;
+    
+  }
+  .section .text{
+    flex-basis: 42%;
+  }
+  .btn-primary{
+    font-size: 13px;
+  }
+  .benefits{
+    padding: 100px 0 150px;
+  }
+  .benefits h2{
+    font-size: 32px;
+  }
+  .benefits p{
+    font-size: 16px;
+    margin-bottom: 70px;
+  }
+}
+@media only screen and (max-width: 876px){
+  .section1 .container{
+    display: block;
+    text-align: center;
+  }
+  .section1 .container p{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 824px){
+  
+  .section2 .container h4{
+    font-size: 20px;
+  }
+  .section2 .container h3{
+    font-size: 30px;
+  }
+  .section2 .container p{
+    font-size: 14px;
+  }
+  .section3 .container h3{
+    font-size: 34px;
+  }
+}
+@media only screen and (max-width: 900px){
+  .software .text{
+    padding: 70px ;
+  }
+}
+@media only screen and (max-width: 1024px){
+  
+  .software #card{
+    padding: 80px 56px;
+  }
+  .software #card1{
+    padding: 80px 56px;
+  }
+  .software #card2{
+    padding: 80px 56px;
+  }
+  .software #card3{
+    padding: 80px 56px;
+  }
+  .software .text{
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 900px){
+  .benefits .row{
+    flex-wrap: wrap;
+  }
+  .benefits .col{
+    width: 31%;
+    padding: 50px 1px;
+  }
+  .benefits .col h3{
+    font-size: 16px;
+  }
+  .benefits .col p{
+    font-size: 10px;
+  }
+  .invoice h2{
+    font-size: 32px;
+  }
+  .invoice p{
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 800px){
+  .invoice h2{
+    font-size: 28px;
+  }
+  .invoice p{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1144px){
+  .invoicing p{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 979px){
+  .invoicing .square{
+    width: 33.33%;
+  }
+  .invoicing .squares{
+    width: 33.33%;
+  }
+  .invoicing .squares:not(:first-child) {
+    margin-left: 0px;
+}
+.invoicing .square:not(:first-child) {
+  margin-left: 0px;
+  
+}
+.invoicing .row .square:nth-child(3){
+  border-top-right-radius: 7px !important;
+  border-bottom: none;
+  border-left: none;
+}
+.invoicing .row .square:last-child{
+  border-radius: 0 !important;
+}
+.invoicing .row .square:first-child{
+  border-bottom: none;
+  border-right: none;
+}
+.invoicing .row .squares:first-child{
+  border-radius: 0 !important;
+}
+.invoicing .row .squares:nth-child(4){
+  border-bottom-left-radius: 7px !important;
+}
+.invoicing .row .square:nth-child(2){
+  border-bottom: none;
+}
+.invoicing .row .square:nth-child(4){
+  border-right: none;
+}
+.invoicing .row .square:last-child{
+  border-left: none;
+}
+.invoicing .row .squares:nth-child(1){
+  border-right: none;
+}
+.invoicing .row .squares:nth-child(3){
+  border-left: none;
+}
+.invoicing .row .squares:nth-child(4){
+  border-right: none;
+}
+.invoicing .row .squares:nth-child(6){
+  border-left: none;
+}
+}
+@media only screen and (max-width: 979px){
+  .formSection .container .myform input{
+    width: 30.33%;
+  }
+  .formSection h2{
+    font-size: 32px;
+  }
+  .formSection .container .myform p{
+    font-size: 16px;
+  }
+  .software button{
+    padding: 11px 20px 19px;
+  }
+}
+@media only screen and (max-width: 870px){
+  .software button{
+    padding: 11px 15px 19px;
+  }
+}
+@media only screen and (max-width: 815px){
+  .software button{
+    padding: 11px 9px 19px;
+  }
+}
+@media only screen and (max-width: 880px){
+  .software .img{
+    display: block;
+    position: relative;
+    
+  }
+  .software .text h5{
+    font-size: 18px;
+  }
+  .software .text p{
+    font-size: 14px;
+  }
+  .software .text ul li{
+    font-size: 14px;
+  }
+}
+.formSection .container .myform .email{
+  margin: 0 20px;
+ 
+  
+ 
+}
+@media only screen and (max-width: 730px){
+  .formSection .container .myform input{
+    width: 100%;
+  }
+  .formSection .container .myform input:nth-child(2){
+    margin: 20px !important;
+  }
+  .formSection .container .myform .email{
+    margin: 0 ;
+   
+    
+   
+  }
+  
+}
+@media only screen and (max-width: 730px){
+  
+}
+
+
