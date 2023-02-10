@@ -1,44 +1,100 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  color: #ffffff;
   font-family: "Inter";
-  background: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+  position: relative;
 }
 
-li {
-  list-style: none;
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 51px;
+  color: #000000;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+
+  color: #243141;
 }
 
 a {
+  color: #2b2f3e;
   text-decoration: none;
 }
 
 .container {
-  width: 1320px;
+  width: 100%;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
-.bg-sec {
-  background: #fff8f1;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.item-end {
+  align-items: flex-end;
+}
+
+.justify-sb {
+  justify-content: space-between;
+}
+
+.block {
+  display: block;
 }
 
 .text-center {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .btn-primary {
-  border: none;
   background: #ec6b16;
+  padding: 15px 31px;
+  color: #fff;
+  text-decoration: none;
   border-radius: 8px;
-  cursor: pointer;
+  transition: all 0.3s ease-in-out;
   font-weight: 400;
   font-size: 16px;
-  line-height: 140%;
-  color: #ffffff;
+  display: inline-flex;
+
+  justify-content: center;
+  border: none;
 }
 
 .btn-secondary {
@@ -47,30 +103,54 @@ a {
   border: 1px solid #ec6b16;
   border-radius: 8px;
   cursor: pointer;
+  padding: 15px 31px;
 }
 
-h1 h2 h3 h4 h5 h6 {
-  color: #243141;
+.btn-secondary:hover {
+  background-color: #000;
+  border-color: #000;
 }
 
-.p-b-140 {
-  padding-bottom: 140px;
+.btn-primary:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input,
+textarea {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 130% */
+
+  color: rgba(0, 0, 0, 0.6);
+}
+
+li {
+  list-style: none;
 }
 
 .bg-t {
   background: #fef9f1;
 }
 
-.d-flex {
-  display: flex;
+header {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 header .logo {
   margin-top: 32px;
-}
-
-header .container {
-  justify-content: space-between;
 }
 
 header .navigation ul {
@@ -93,13 +173,6 @@ header .navigation ul li a:hover {
 
 header .btn {
   margin-top: 30px;
-  padding: 15px 31px;
-  margin-top: 30px;
-  color: #ffffff;
-}
-
-header .btn:hover {
-  background-color: #243141;
 }
 
 #popup {
@@ -136,16 +209,16 @@ header .btn:hover {
 }
 
 /* #popup:before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: #FFF;
-  z-index: -1;
-  border-radius: 20px
-} */
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFF;
+    z-index: -1;
+    border-radius: 20px
+  } */
 
 .popup h2 {
   font-family: "Inter";
@@ -188,10 +261,10 @@ header .btn:hover {
 }
 
 /* .custom-animation {
-  
-  transform: rotate3d(1, .5, .5, 180deg) scale(0.1);
-  transition: all ease-in .4s;
-} */
+    
+    transform: rotate3d(1, .5, .5, 180deg) scale(0.1);
+    transition: all ease-in .4s;
+  } */
 .popup .cross {
   background: none;
   border: none;
@@ -204,23 +277,27 @@ header .btn:hover {
   font-size: 16px;
 }
 
+/* section */
 .section {
-  padding-top: 61px;
-  padding-bottom: 80px;
+  background: #fef9f1;
 }
 
 .section .container {
+  padding-top: 130px;
+  padding-bottom: 80px;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .section .container h6 {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: rgba(236, 107, 22, 0.76);
+  background-color: #ffe9cf;
   padding: 10px;
   border-radius: 3px;
-  width: 192px;
+  color: #ec6b16c2;
+  display: inline-block;
 }
 
 .section .container h1 {
@@ -229,7 +306,6 @@ header .btn:hover {
   line-height: 51px;
   color: #000000;
   margin: 10px 0px;
-  width: 543px;
 }
 
 .section .container p {
@@ -257,11 +333,6 @@ header .btn:hover {
   color: #ec6b16;
 }
 
-.section .frame {
-  right: 74px;
-  position: relative;
-}
-
 .section .btn {
   padding: 15px 31px;
   bottom: -30px;
@@ -274,6 +345,14 @@ header .btn:hover {
   transition: 0.3 ease-in-out;
   color: #ffffff;
   border: none;
+}
+
+.section .text {
+  flex-basis: 40%;
+}
+
+.section .frame {
+  flex-basis: 60%;
 }
 
 .section1 .container {
@@ -294,12 +373,10 @@ header .btn:hover {
   color: #515151;
 }
 
-.section2 .container .card {
-  padding-bottom: 60px;
-  border-radius: 10px;
-  margin-bottom: 60px;
+.section2 .container {
+  padding: 40px 0px;
   background: #fff8f1;
-  border: 1px solid #FFEEE2;
+  border: 1px solid #ffeee2;
   border-radius: 10px;
 }
 
@@ -308,11 +385,16 @@ header .btn:hover {
   font-size: 24px;
   line-height: 130%;
   color: #0e0b3d;
-  padding: 50px 0px;
+
+  /* padding: 50px 0px; */
 }
 
-.section2 .container .card .row {
-  column-gap: 48px;
+.section2 .col {
+  flex-basis: 25%;
+  position: relative;
+  text-align: center;
+  border-right: 1px solid rgba(236, 107, 22, 0.33);
+  margin-top: 58px;
 }
 
 .section2 .container h3 {
@@ -331,19 +413,9 @@ header .btn:hover {
   position: relative;
 }
 
-.section2 .col {
-  width: 291px;
+.section2 .col:last-child {
+  border-right: 0;
 }
-
-.section2 .container .col p::after {
-  content: "";
-  position: absolute;
-  border: 1px solid rgba(236, 107, 22, 0.33);
-  width: 101px;
-  transform: rotate(90deg);
-}
-
-/* -----------------------SLIDER--------------------- */
 
 .section3 {
   text-align: center;
@@ -399,8 +471,8 @@ header .btn:hover {
 .section3 .container .glide .card {
   margin-top: 20px;
   text-align: left;
-  width: 427px;
 
+  margin-right: 20px;
   border: 1px solid #fbcdae;
   border-radius: 10px;
   padding: 48px 41px 31px 36px;
@@ -410,7 +482,7 @@ header .btn:hover {
 }
 
 .section3 .container .glide .card:hover {
-  border: 1px solid #FF9D3C;
+  border: 1px solid #ff9d3c;
 }
 
 .section3 .container .glide .card::before {
@@ -423,40 +495,13 @@ header .btn:hover {
   left: -17px;
 }
 
-.glide__bullet {
-  background-color: #FFE6CD;
-  width: 7px;
-  height: 7px;
-  padding: 0;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  cursor: pointer;
-  margin-right: 12px;
-  margin-bottom: 60px;
-}
-
-.glide__bullet--active {
-  background-color: #F88601;
-}
-
-
-.section3 .container .OR {
-
-  position: relative;
-  top: 80px;
-  left: 13px;
-
-}
-
 .section3 .container .glide .card p {
   text-align: left;
   font-weight: 400;
   font-size: 12px;
   line-height: 160%;
   color: #333030;
-  margin-bottom: 81px;
+  margin-bottom: 59px;
 }
 
 .section3 .container .glide .card .profile p {
@@ -502,6 +547,183 @@ header .btn:hover {
   position: relative;
 }
 
+.section3 .container .OR {
+  position: relative;
+  top: 81px;
+  left: 13px;
+}
+
+.glide__bullet {
+  background-color: #ffe6cd;
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  margin-right: 12px;
+}
+
+.glide__bullet--active {
+  background-color: #f88601;
+}
+
+.selection {
+  padding-bottom: 120px;
+}
+
+.selection h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+  color: #243141;
+}
+
+.selection p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #0e0b3d;
+  margin-bottom: 82px;
+}
+
+.selection #card {
+  padding: 120px 70px;
+  background: #fff8f1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 110px;
+  padding-right: 70px;
+}
+
+.selection button {
+  border: none;
+  background: transparent;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 26px 32px 19px;
+  cursor: pointer;
+  color: #282a30;
+}
+
+.selection .active {
+  background-color: #fff8f1;
+  border-radius: 17px 17px 0px 0px;
+}
+
+.selection #card1 {
+  padding: 120px 70px;
+  background: #fff8f1;
+  border-radius: 10px;
+  display: none;
+  justify-content: space-between;
+  padding-left: 110px;
+  padding-right: 70px;
+}
+
+.selection #card2 {
+  padding: 120px 70px;
+  background: #fff8f1;
+  border-radius: 10px;
+  display: none;
+  justify-content: space-between;
+  padding-left: 110px;
+  padding-right: 70px;
+}
+
+.selection #card3 {
+  padding: 120px 70px;
+  background: #fff8f1;
+  border-radius: 10px;
+  display: none;
+  justify-content: space-between;
+  padding-left: 110px;
+  padding-right: 70px;
+}
+
+.selection .text {
+  flex-basis: 40%;
+  padding-top: 50px;
+}
+
+.selection .text h5 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #243141;
+  margin-bottom: 5px;
+}
+
+.selection .text p {
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4e5062;
+}
+
+.selection .text ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #4e5062;
+  position: relative;
+  padding-left: 15px;
+  left: 15px;
+}
+
+.selection .text ul li::marker {
+  position: absolute;
+  content: "✓";
+  color: #ec6b16;
+}
+
+.selection .img {
+  flex-basis: 60%;
+
+  align-items: center;
+  display: flex;
+}
+
+.selection .navigation {
+  text-align: center;
+}
+
+.selection .navigation ul {
+  display: flex;
+  padding: 0px 100px;
+  justify-content: center;
+}
+
+.selection .navigation ul li {
+  font-weight: 500;
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 20px;
+}
+
+.selection .navigation ul li:hover {
+  background-color: #fff8f1;
+  border-radius: 17px 17px 0px 0px;
+}
+
+.selection .navigation ul li a {
+  color: #282a30;
+}
+
 .billing {
   padding: 140px 0px 172px;
   background-color: #fff8f1;
@@ -532,8 +754,8 @@ header .btn:hover {
 }
 
 .billing .col {
-  width: 429px;
-  height: 374px;
+  width: 427px;
+
   border: 1px solid #fcdbbb;
   align-items: center;
   text-align: center;
@@ -559,6 +781,7 @@ header .btn:hover {
   line-height: 180%;
   text-align: center;
   color: #6c6f93;
+  margin: 0;
 }
 
 .billing a {
@@ -592,6 +815,12 @@ header .btn:hover {
   transition: 0.3s ease-in-out;
 }
 
+.billing .OR {
+  position: relative;
+  top: 80px;
+  left: 9px;
+}
+
 .invoice {
   padding-top: 140px;
   padding-bottom: 112px;
@@ -613,18 +842,6 @@ header .btn:hover {
   align-items: center;
   text-align: center;
   color: #0e0b3d;
-}
-
-.invoice .image {
-  height: 699px;
-  background-position: center;
-  margin-top: 64px;
-  position: relative;
-  top: -117px;
-}
-
-.invoice .image img {
-  margin-top: 78px;
 }
 
 .invoicing {
@@ -657,33 +874,37 @@ header .btn:hover {
 
 .invoicing .row {
   display: flex;
+  flex-wrap: wrap;
   /* border: 0.25px solid #ec6b16; */
 }
 
 .invoicing .square {
-  height: 175px;
-  width: 220px;
+  width: 16.66%;
   align-items: center;
   border: 0.5px solid #ec6b16;
   /* border-bottom-width : thin; */
-  padding-top: 48px;
+  padding-top: 46px;
+  padding-bottom: 59px;
+
 }
 
 .invoicing .squares {
-  height: 175px;
-  width: 220px;
+  width: 16.66%;
   align-items: center;
   border: 1px solid #ec6b16;
-  padding-top: 48px;
+  padding-top: 46px;
+  padding-bottom: 59px;
   border-top: none;
 }
 
 .invoicing .square p {
   margin-top: 16px;
+  margin-bottom: 0;
 }
 
 .invoicing .squares p {
   margin-top: 16px;
+  margin-bottom: 0;
 }
 
 .invoicing .square:not(:first-child) {
@@ -704,13 +925,13 @@ header .btn:hover {
 }
 
 .myform {
-  min-width: 1076px;
+  max-width: 1076px;
   padding: 55px 60px;
   min-height: 553px;
   border: 1px solid #fff8f1;
   background: #fff8f1;
   border-radius: 32px;
-  margin: 92px 182px 178px 182px;
+  margin: 92px auto 178px;
   text-align: center;
 }
 
@@ -724,8 +945,8 @@ header .btn:hover {
 }
 
 .formSection .container .myform input {
-  width: 301px;
-  height: 55px;
+  width: 31.33%;
+
   border: 1px solid #fed7bd;
   border-radius: 10px;
   padding: 18px 20px;
@@ -733,7 +954,7 @@ header .btn:hover {
 }
 
 .formSection .container .myform textarea {
-  width: 955px;
+  width: 100%;
   height: 159px;
   padding: 18px 20px;
   border: 1px solid #fed7bd;
@@ -745,9 +966,7 @@ header .btn:hover {
   line-height: 18px;
   /* identical to box height, or 130% */
 
-
   color: rgba(0, 0, 0, 0.6);
-
 }
 
 .formSection button {
@@ -788,165 +1007,312 @@ footer p {
   background-color: #000000;
 }
 
-.selection {
-  padding-bottom: 120px;
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
 }
 
-.selection h2 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 0.1px;
-  color: #243141;
+@media only screen and (max-width: 1125px) {
+  .section .btn {
+    padding: 15px 15px;
+    bottom: -30px;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .section .frame {
+    flex-basis: 60%;
+    top: 62px;
+    position: relative;
+    display: inline-block;
+  }
 }
 
-.selection p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  text-align: center;
-  color: #0e0b3d;
-  margin-bottom: 82px;
+@media only screen and (max-width: 1080px) {
+  .section1 .container p {
+    font-size: 12px;
+  }
+
+  .billing .col h3 {
+    font-size: 18px;
+  }
+
+  .billing .col p {
+    font-size: 14px;
+  }
 }
 
-.selection #card {
-  height: 533px;
-  background: #fff8f1;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 110px;
-  padding-right: 70px;
+@media only screen and (max-width: 1056px) {
+  .formSection .container {
+    width: 100%;
+  }
 }
 
-.selection button {
-  border: none;
-  background: transparent;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 26px 32px 19px;
-  cursor: pointer;
-  color: #282a30;
+@media only screen and (max-width: 1200px) {
+  .selection button {
+    font-size: 12px;
+  }
+
+  .selection .text {
+    padding: 0;
+    right: 20px;
+    position: relative;
+  }
 }
 
-.selection .active {
-  background-color: #fff8f1;
-  border-radius: 17px 17px 0px 0px;
+@media only screen and (max-width: 1080px) {
+  .selection button {
+    font-size: 10px;
+  }
+
+  .selection #card {
+    padding: 84px 70px;
+  }
+
+  .selection #card1 {
+    padding: 84px 70px;
+  }
+
+  .selection #card2 {
+    padding: 84px 70px;
+  }
+
+  .selection #card3 {
+    padding: 84px 70px;
+  }
 }
 
-.selection #card1 {
-  height: 533px;
-  background: #fff8f1;
-  border-radius: 10px;
-  display: none;
-  justify-content: space-between;
-  padding-left: 110px;
-  padding-right: 70px;
+@media only screen and (max-width: 948px) {
+  .section .container h1 {
+    font-size: 36px;
+  }
+
+  .section .container p {
+    font-size: 16px;
+  }
+
+  .section .container ul li {
+    font-size: 15px;
+  }
+
+  .section .btn {
+    margin-right: 4px;
+    padding: 12px 8px;
+
+  }
+
+  .section .text {
+    flex-basis: 42%;
+  }
+
+  .btn-primary {
+    font-size: 13px;
+  }
+
+  .billing {
+    padding: 100px 0 150px;
+  }
+
+  .billing h2 {
+    font-size: 32px;
+  }
+
+  .billing p {
+    font-size: 16px;
+    margin-bottom: 70px;
+  }
 }
 
-.selection .tab img {
-  width: 740px;
-  right: 117px;
-  top: -62px;
-  position: relative;
-  padding: 51px
+@media only screen and (max-width: 876px) {
+  .section1 .container {
+    display: block;
+    text-align: center;
+  }
+
+  .section1 .container p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }
 
-.selection #card2 {
-  height: 533px;
-  background: #fff8f1;
-  border-radius: 10px;
-  display: none;
-  justify-content: space-between;
-  padding-left: 110px;
-  padding-right: 70px;
+@media only screen and (max-width: 824px) {
+
+  .section2 .container h4 {
+    font-size: 20px;
+  }
+
+  .section2 .container h3 {
+    font-size: 30px;
+  }
+
+  .section2 .container p {
+    font-size: 14px;
+  }
+
+  .section3 .container h3 {
+    font-size: 34px;
+  }
 }
 
-.selection #card3 {
-  height: 533px;
-  background: #fff8f1;
-  border-radius: 10px;
-  display: none;
-  justify-content: space-between;
-  padding-left: 110px;
-  padding-right: 70px;
+@media only screen and (max-width: 900px) {
+  .selection .text {
+    padding: 70px;
+  }
 }
 
-.selection .text {
-  width: 502px;
-  padding-top: 127px;
+@media only screen and (max-width: 1024px) {
+
+  .selection #card {
+    padding: 80px 56px;
+  }
+
+  .selection #card1 {
+    padding: 80px 56px;
+  }
+
+  .selection #card2 {
+    padding: 80px 56px;
+  }
+
+  .selection #card3 {
+    padding: 80px 56px;
+  }
+
+  .selection .text {
+    padding: 0;
+  }
 }
 
-.selection .text h5 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 150%;
-  color: #243141;
-  margin-bottom: 5px;
+@media only screen and (max-width: 900px) {
+  .billing .row {
+    flex-wrap: wrap;
+  }
+
+  .billing .col {
+    width: 31%;
+    padding: 50px 1px;
+  }
+
+  .billing .col h3 {
+    font-size: 16px;
+  }
+
+  .billing .col p {
+    font-size: 10px;
+  }
+
+  .invoice h2 {
+    font-size: 32px;
+  }
+
+  .invoice p {
+    font-size: 16px;
+  }
 }
 
-.selection .text p {
-  font-weight: 400;
-  text-align: left;
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 150%;
-  color: #4e5062;
+@media only screen and (max-width: 800px) {
+  .invoice h2 {
+    font-size: 28px;
+  }
+
+  .invoice p {
+    font-size: 14px;
+  }
 }
 
-.selection .text ul li {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  color: #4e5062;
-  position: relative;
-  padding-left: 15px;
-  left: 15px;
+@media only screen and (max-width: 1144px) {
+  .invoicing p {
+    font-size: 14px;
+  }
 }
 
-.selection .text ul li::marker {
-  position: absolute;
-  content: "✓";
-  color: #ec6b16;
+@media only screen and (max-width: 979px) {
+  .invoicing .square {
+    width: 33.33%;
+  }
+
+  .invoicing .squares {
+    width: 33.33%;
+  }
+
+  .invoicing .squares:not(:first-child) {
+    margin-left: 0px;
+  }
+
+  .invoicing .square:not(:first-child) {
+    margin-left: 0px;
+
+  }
+
+  .invoicing .row .square:nth-child(3) {
+    border-top-right-radius: 7px !important;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  .invoicing .row .square:last-child {
+    border-radius: 0 !important;
+  }
+
+  .invoicing .row .square:first-child {
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .invoicing .row .squares:first-child {
+    border-radius: 0 !important;
+  }
+
+  .invoicing .row .squares:nth-child(4) {
+    border-bottom-left-radius: 7px !important;
+  }
+
+  .invoicing .row .square:nth-child(2) {
+    border-bottom: none;
+  }
+
+  .invoicing .row .square:nth-child(4) {
+    border-right: none;
+  }
+
+  .invoicing .row .square:last-child {
+    border-left: none;
+  }
+
+  .invoicing .row .squares:nth-child(1) {
+    border-right: none;
+  }
+
+  .invoicing .row .squares:nth-child(3) {
+    border-left: none;
+  }
+
+  .invoicing .row .squares:nth-child(4) {
+    border-right: none;
+  }
+
+  .invoicing .row .squares:nth-child(6) {
+    border-left: none;
+  }
 }
 
-.selection .img {
-  width: 552px;
-  border-radius: 19px;
-  margin-top: 60px;
-  height: 424px;
-}
+@media only screen and (max-width: 979px) {
+  .formSection .container .myform input {
+    width: 30.33%;
+  }
 
-.selection .navigation {
-  text-align: center;
-}
+  .formSection h2 {
+    font-size: 32px;
+  }
 
-.selection .navigation ul {
-  display: flex;
-  padding: 0px 100px;
-  justify-content: center;
-}
+  .formSection .container .myform p {
+    font-size: 16px;
+  }
 
-.selection .navigation ul li {
-  font-weight: 500;
-  text-decoration: none;
-  list-style: none;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 10px 20px;
-}
-
-.selection .navigation ul li:hover {
-  background-color: #fff8f1;
-  border-radius: 17px 17px 0px 0px;
-}
-
-.selection .navigation ul li a {
-  color: #282a30;
+  .selection button {
+    padding: 11px 20px 19px;
+  }
 }
 
 @media only screen and (max-width: 870px) {
@@ -963,8 +1329,8 @@ footer p {
 
 @media only screen and (max-width: 880px) {
   .selection .img {
-    display: block;
-    position: relative;
+    /* display: block;
+    position: relative; */
 
   }
 
@@ -1006,4 +1372,294 @@ footer p {
 
 }
 
-@media only screen and (max-width: 730px) {}
+@media only screen and (max-width: 760px) {
+  header .logo {
+    margin-top: 42px;
+    width: 16%;
+  }
+
+  header .navigation ul li a {
+    font-size: 12px;
+  }
+
+  .billing .row {
+    margin-bottom: 0;
+  }
+
+  .btn-primary {
+    font-size: 10px;
+    padding: 15px 15px;
+  }
+
+  .section .btn {
+    font-size: 14px;
+  }
+
+  .section .container {
+    display: block;
+  }
+
+  .section2 .container h4 {
+    font-size: 18px;
+  }
+
+  .section2 .col {
+    margin-top: 26px;
+  }
+
+  .section2 .container h3 {
+    font-size: 26px;
+  }
+
+  .section2 .container p {
+    font-size: 12px;
+  }
+
+  .section3 .container h3 {
+    font-size: 30px;
+  }
+
+  .section3 .container .glide .card {
+    margin-bottom: 34px;
+  }
+
+  .section3 .container {
+    padding: 60px 0;
+  }
+
+  .selection h2 {
+    font-size: 28px;
+  }
+
+  .selection p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .billing {
+    padding: 50px 0 100px;
+  }
+
+  .billing p {
+    font-size: 12px;
+  }
+
+  .billing .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .billing .btn {
+    top: 0;
+  }
+
+  .billing a {
+    top: 0 !important;
+  }
+
+  .billing .OR {
+    top: 20px;
+  }
+
+  .invoice h2 {
+    font-size: 22px;
+  }
+
+  .invoice {
+    padding: 80px 0;
+  }
+
+  .invoicing h2 {
+    font-size: 30px;
+  }
+
+  .invoicing {
+    padding: 80px 0;
+  }
+
+  .selection #card {
+    flex-wrap: wrap;
+  }
+
+  .selection #card1 {
+    flex-wrap: wrap;
+  }
+
+  .selection #card2 {
+    flex-wrap: wrap;
+  }
+
+  .selection #card3 {
+    flex-wrap: wrap;
+  }
+
+  .main-tab {
+    display: flex;
+    background-color: #fff8f1;
+  }
+
+  .selection .text {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .selection .img {
+    width: 100%;
+    flex-basis: 100%;
+    margin-top: 30px;
+  }
+
+  .selection .navigation {
+    padding-top: 50px;
+    width: 25%;
+  }
+
+  .selection .navigation img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  header .navigation ul {
+    column-gap: 15px;
+  }
+
+  header .navigation ul li a {
+    font-size: 10px;
+    top: 35px;
+  }
+
+  .btn-primary {
+    padding: 10px 4px;
+  }
+
+  header .logo {
+    margin-top: 38px;
+  }
+
+  .section .container {
+    padding-top: 100px;
+  }
+
+  .section2 .col {
+    flex-basis: 50%;
+  }
+
+  .section2 .col:nth-child(2) {
+    border: none;
+  }
+
+  .section3 .container h3 {
+    font-size: 26px;
+  }
+
+  .section3 .container p {
+    font-size: 16px;
+  }
+
+  .section3 .container .OR {
+    display: none;
+  }
+
+  .section3 a {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .selection h2 {
+    font-size: 24px;
+  }
+
+  .selection p {
+    font-size: 12px;
+  }
+
+  .billing h2 {
+    font-size: 26px;
+  }
+
+  .billing p {
+    font-size: 10px;
+  }
+
+  .billing .col {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .billing .OR {
+    display: none;
+  }
+
+  .billing a {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .invoice h2 {
+    font-size: 14px;
+  }
+
+  .invoice p {
+    font-size: 12px;
+  }
+
+  .invoicing h2 {
+    font-size: 26px;
+  }
+
+  .invoicing p {
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+
+  .invoicing .square {
+    width: 50%;
+  }
+
+  .invoicing .squares {
+    width: 50%;
+  }
+
+  .invoicing .row .square:nth-child(2) {
+    border-top-right-radius: 7px !important;
+  }
+
+  .invoicing .row .square:nth-child(3) {
+    border-top-right-radius: 0px !important;
+    border-bottom: none;
+    border-right: none;
+    border-left: 1px solid #ec6b16;
+  }
+
+  .invoicing .row .square:nth-child(4) {
+    border-right: 1px solid #ec6b16;
+    border-bottom: none;
+  }
+
+  .invoicing .row .square:nth-child(5) {
+    border-right: none;
+  }
+
+  .invoicing .row .square:nth-child(6) {
+    border-left: 1px solid #ec6b16;
+  }
+
+  .invoicing .row .squares:nth-child(3) {
+    border-left: 1px solid #ec6b16;
+    border-right: none;
+  }
+
+  .invoicing .row .squares:nth-child(4) {
+    border-right: 1px solid #ec6b16;
+    border-radius: 0 !important;
+  }
+
+  .invoicing .row .squares:nth-child(5) {
+    border-bottom-left-radius: 7px;
+  }
+
+
+
+
+}
