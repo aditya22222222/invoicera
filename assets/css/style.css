@@ -1416,9 +1416,9 @@ footer p {
 /* .popup input:nth-child(3) {
   margin-right: 30px;
 } */
-.popup .company {
+/* .popup .company {
   margin-left: 30px;
-}
+} */
 @media only screen and (max-width: 700px) {
   .popup input {
     display: block;
